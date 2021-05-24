@@ -1,0 +1,577 @@
+<div id="wrapper">
+
+    <!-- BANNER WRAPPER -->
+    <div id="banner-wrapper">
+      <header>
+        <div id="header-inner">
+          <a href="/" id="logo">
+            <img src="/img/logo/Logo APS.png">
+          </a>
+
+          <nav>
+            <ul>
+              <li class="pal">
+                <a href="/">
+                  Inici
+                </a>
+              </li>
+              <li class="pal">
+                <a href="/reciclatge"  class="current">
+                  Reciclatge
+                </a>
+              </li>
+              <li class="pal">
+                <a href="/la-suissa">
+                  La Suïssa
+                </a>
+              </li>
+              <li class="pal">
+                <a href="/historia">
+                  Història
+                </a>
+              </li>
+              <li class="pal" id="cn">
+                <a href="/contacte">
+                  Contacte
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- SLIDER -->
+      <div id="slide-wrap">
+        <section class="slider">
+          <ul class="slider1">
+            <li><img src="/img/img/reci1.png" id="imagenes" class="im1"></li>
+            <li><img src="/img/img/reci2.png" id="imagenes" class="im2"></li>
+            <li><img src="/img/img/reci3.png" id="imagenes" class="im3"></li>
+          </ul>
+        </section>
+      </div>
+      <input value="Mes informació" type="button" id="more-info" onclick="moreInfo()"></input>
+      <div id="all-wrapper" onscroll="Scroll()">
+        <div>
+          <h1 id="tit">Que és Reciclar?</h1>
+          <li id="text">
+            Vol dir que hem de <b>llençar cada residu al seu contenidor corresponent</b>, perquè després d'uns  processos es torni a convertir en alguna cosa útil i no en alguna cosa perjudicial per a la natura. O sigui és donar-li als objectes una segona vida.
+          </li>
+          <br>
+          <h1 id="tit-2">Que es el Reciclatge?</h1>
+          <li id="text">
+            El <b>reciclatge</b> comença amb la separació correcta de les deixalles a les nostres cases, desprès les dipositem als contenidors de recollida selectiva que troben als carres de les nostres ciutats i finalment van a les plantes de tractaments on les deixalles es transformen i se'ls dóna una segona vida.   
+          </li>
+        </div>
+        <br>
+        <br>
+        <br>
+        <table id="table">
+          <thead>
+            <tr id="t-ca">
+              <th>Residus</th>
+              <th>Contenidor</th>
+              <th>Quin proces segueix?</th>
+              <th>En que es transforma?</th>
+            </tr>
+          </thead>
+          <tbody id="t-body">
+            <tr id="t-1">
+              <td>Orgànic</td>
+              <td>Marró</td>
+              <td>Planta de digestió anaeròbia.
+                  Planta de compostatge
+              </td>
+              <td>Compost(adob), electricitat i calor.</td>
+            </tr>
+            <tr id="t-2">
+              <td>Envasos de plàstic, metàl•lics i brics</td>
+              <td>Groc</td>
+              <td>Primer a la Planta de triatge: Envasos lleugers i després Planta de reciclatge Plàstic.</td>
+              <td>Envasos, fibres tèxtils per samarretes esportives, bolígrafs, tubs, peces d’automoció.</td>
+
+            </tr>
+            <tr id="t-3">
+              <td>Envasos de vidre</td>
+              <td>Verd</td>
+              <td>Primer a la planta de triatge de vidre i després a la planta de reciclatge del vidre.</td>
+              <td>Envasos i ampolles de vidre reciclats.</td>
+            </tr>
+            <tr id="t-4">
+              <td>Paper i cartró</td>
+              <td>Blau</td>
+              <td>Primer a la planta de triatge de paper i després a la planta de reciclatge de paper.</td>
+              <td>En paper i cartró reciclat.</td>
+            </tr>
+            <tr id="t-5">
+              <td>Mascaretes, guants, tovalloleta humida, bolquers, compreses,maquineta d’afaitar, gomes d’esborrar... Tots aquells residus que no poden ser reciclats ni aprofitats de cap manera.</td>
+              <td>Gris</td>
+              <td>Planta de tractament de residu de resta.</td>
+              <td>Incineradora-electritcitat  i les escòries es porten al dipòsit controlat on es tapen amb terra i es pot utilitzar com espai verd.</td>
+            </tr>
+            <tr id="t-6">
+              <td>Ceràmica, matalàs, electrodomèstics, mobles de fusta, oli de cuina, joguines, mòbils, ordinadors i accessoris...Tots aquells residus que no es poden llançar a cap contenidor.</td>
+              <td>Deixelleria</td>
+              <td>A les plantes de tractament, els residus de ceràmica i  de runes es trituren.</td>
+              <td>Per reomplir dipòsits controlats, pedreres i excavacions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #ecf0f1;
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+
+  #imagenes {
+    padding-right: 70px;
+  }
+
+  .im2 {
+    padding-top: 25px;
+  }
+
+  .im3 {
+    width: 90%;
+  }
+
+  p {
+    color: #524c56;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #524c56;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  a {
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #c3d7df;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  #wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+
+  header #logo img{
+    margin: 20px;
+    float: left;
+    width: 50px;
+  }
+
+
+  nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+  }
+
+  #menu-icon {
+    display: none;
+    font-size: 50px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    width: auto;
+    padding: 15px 5px 15px 5px;
+    color: #6991AC;
+  }
+
+  .current {
+    color: #3F5767;
+  }
+
+  a:hover {
+    color: #a5bdcd;
+  }
+
+  .one-third {
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .icon-wrap {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #6991ac;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .icon-wrap i {
+    text-align: center;
+    color: #ffffff;
+    font-size: 450%;
+    padding: 20%;
+  }
+  .left-col {
+    float: left;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    padding: 1%;
+  }
+
+  .sidebar {
+    float: right;
+    margin: 0 auto;
+    width: 32%;
+    height: auto;
+    padding: 1%;
+  }
+
+  .one-third-padding {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+  }
+
+  .clearfix-padding {
+    clear: both;
+    padding: 2%;
+  }
+
+  footer {
+    background: #2c3e50;
+    width: 100%;
+    overflow: auto;
+  }
+  .icon-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .icon-text-icon {
+    float: left;
+    width: 20%;
+    padding: 4%;
+  }
+  .icon-text-text {
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+  }
+
+  .footer-nav {
+    text-align: right;
+  }
+
+  .footer-nav a {
+    font-size: 160%;
+    color: #c3d7df;
+    font-weight: 300;
+  }
+
+  .footer-nav a:hover {
+    color: #f5f5f5;
+  }
+
+  .social {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .social li {
+    display: inline;
+  }
+
+  .social i {
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: #c3d7df;
+  }
+
+  .social i:hover {
+    color: #f5f5f5;
+  }
+
+  footer.second {
+    border-top: 1px solid #aadcd2;
+    text-align: center;
+    margin: 0;
+  }
+  footer.second p, .second a {
+    text-align: center;
+    color: #fff;
+    font-size: 160%;
+    line-height: 155%;
+  }
+
+  #more-info {
+    position: auto;
+    width: 100%;
+    height: 80px;
+    background-color:rgba(150, 247, 147, 0.986);
+    border: solid  #3aa840 2.5px;
+    text-align: center;
+    font-size: 200%;
+    opacity: 50%;
+    transition: opacity 1s, height 1s, font-size 1s;
+    z-index: 5;
+    font-weight: bold;
+    color: #3aa840;
+  }
+
+  #more-info:hover {
+    opacity: 100%;
+  }
+
+  #all-wrapper {
+    display: none;
+  }
+
+  #tit {
+    padding-top: 100px;
+    font-size: 35px;
+  }
+
+  #tit-2 {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+
+  #text {
+    padding-top: 20px;
+    font-size: 150%;
+    text-align: justify;
+  }
+
+  td, tr, th{
+    border: solid black 2px;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    Font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  }
+
+  #t-1 {
+    background-color: rgb(241, 189, 68);
+  }
+
+  #t-2 {
+    background-color: rgb(255, 238, 6);
+  }
+
+  #t-3 {
+    background-color: rgb(171, 216, 46);
+  }
+
+  #t-4 {
+    background-color: rgb(64, 194, 255);
+  }
+
+  #t-5 {
+    background-color: rgb(197, 195, 195);
+  }
+
+  #t-6 {
+    background-color: rgb(181, 73, 231); 
+  }
+
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 130%;
+    }
+    h3 {
+      font-size: 150%;
+    }
+    header {
+      height: 80px;
+      position: relative;
+    }
+    header #logo {
+      margin: 15px 0 20px -25px;
+    }
+
+    #menu-icon {
+      display: inline-block;
+    }
+
+    .one-third {
+      float: left;
+      width: 100%;
+
+    }
+    .icon-wrap {
+      height: 80px;
+      width: 80px;
+      margin-top: 3%;
+    }
+
+    .icon-wrap i {
+      font-size: 250%;
+      padding-top: 27%;
+    }
+
+    .left-col {
+      width: 100%;
+      padding: 0;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+
+    .one-third-padding {
+      width: 98%;
+      margin: 0;
+      padding: 1%;
+    }
+
+    .icon-text-icon {
+      width: 100%;
+      padding: 0 0 2% 0;
+    }
+
+    .icon-text-text {
+      width: 100%;
+      padding: 2% 0 0 0;
+      font-size: 80%;
+    }
+
+    .footer-nav {
+      margin: 0 auto;
+      text-align: center;
+      padding: 5%;
+    }
+
+    .footer-nav li {
+      padding: 1%;
+    }
+
+    #more-info {
+      height: 55px;
+      width: 100%;
+      text-align: center;
+      border: solid 2px black;
+    }
+
+    #go-forward {
+      width: 50px;
+      height: 50px;
+
+    }
+    
+    #text {
+      font-size: 110%;
+    }
+
+    #tit, #tit-2 {
+      text-align: center;
+    }
+    
+    nav ul li {
+      padding: 15px 2px 15px 2px;
+      font-size: 110%;
+      text-align: left;
+    }
+
+    #logo {
+      display: none;
+    }
+
+
+  }
+
+  </style>
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+    });
+
+    let value = false
+
+    function moreInfo() {
+      let info = document.getElementById("more-info")
+      let all = document.getElementById("all-wrapper") 
+
+      if(value == false) {
+        value = true
+        info.value = "Menys informació"
+        all.style.display = "block"
+      } else if(value == true) {
+        info.value = "Mes informació"
+        all.style.display = "none"
+        value = false
+      } 
+    }
+
+
+  </script>
